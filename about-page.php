@@ -17,7 +17,7 @@ get_header();
 <section class="page_body">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mb-5">
            
             <?php
                     // Check if Advanced Custom Fields (ACF) is active
@@ -46,56 +46,6 @@ get_header();
             </div>
         </div>
 
-<div class="row my-5 about_section2_items">
-    <?php
-    // Check if Advanced Custom Fields (ACF) is active and if the repeater field 'text_blocks' exists
-    if (function_exists('have_rows') && have_rows('counter_blocks')) {
-        // Start the loop for the repeater field
-        $counterIndex = 0;
-        while (have_rows('counter_blocks')) {
-            the_row(); // Advance the repeater loop
-
-            // Get the values of the subfields 'title' and 'text'
-            $title = get_sub_field('number');
-            $text = get_sub_field('text');
-
-            // Get the number from the ACF field and ensure it's an integer
-            $number = intval($title);
-
-            // Determine the symbol to use based on the text field
-            $symbol = ($text === 'Pass Rate') ? '%' : '+';
-
-            // Output the values within your desired HTML structure
-            echo '<div class="col-12 col-md-3 mb-4">';
-            echo '<div class="about_section2_item">';
-            echo '<div class="about_section2_item-title counter-' . $counterIndex . '">' . esc_html($title) . $symbol . '</div>';
-            echo '<div class="about_section2_item-text">' . esc_html($text) . '</div>';
-            echo '</div>';
-            echo '</div>';
-
-            // Use JavaScript/jQuery to update the counter dynamically
-            echo '<script type="text/javascript">
-                jQuery(document).ready(function($) {
-                    var number' . $counterIndex . ' = ' . $number . ';
-                    var counterElement' . $counterIndex . ' = $(".counter-' . $counterIndex . '");
-                    var counter' . $counterIndex . ' = 0;
-                    var interval' . $counterIndex . ' = setInterval(function() {
-                        counterElement' . $counterIndex . '.text(counter' . $counterIndex . ' + "' . $symbol . '");
-                        counter' . $counterIndex . '++;
-                        if (counter' . $counterIndex . ' > number' . $counterIndex . ') {
-                            clearInterval(interval' . $counterIndex . ');
-                            // Set the final value after animation completes
-                            counterElement' . $counterIndex . '.text(number' . $counterIndex . ' + "' . $symbol . '");
-                        }
-                    }, 10); // Update every 10 milliseconds (adjust the interval as needed for speed)
-                });
-                </script>';
-            
-            $counterIndex++;
-        }
-    }
-    ?>
-</div>
 
 
 
@@ -119,24 +69,36 @@ get_header();
     }
     ?>
 
-    <div class="col-md-3 counter-card-item">
-        <h2 class="about_section2_item-title"><span class="counter"><?php echo esc_html($years_of_experience); ?></span>+</h2>
+    <div class="col-md-6 col-lg-3 mb-4">
+    <div class="counter-card-item ">
+    <h2 class="about_section2_item-title"><span class="counter"><?php echo esc_html($years_of_experience); ?></span>+</h2>
         <h3 class="about_section2_item-text">Years of experience</h3>
+</div>
+        
     </div>
 
-    <div class="col-md-3 counter-card-item">
-        <h2 class="about_section2_item-title"><span class="counter"><?php echo esc_html($staff); ?></span>+</h2>
+    <div class="col-md-6 col-lg-3 mb-4">
+    <div class="counter-card-item ">
+    <h2 class="about_section2_item-title"><span class="counter"><?php echo esc_html($staff); ?></span>+</h2>
         <h3 class="about_section2_item-text">Staff</h3>
+</div>
+      
     </div>
 
-    <div class="col-md-3 counter-card-item">
-        <h2 class="about_section2_item-title"><span class="counter"><?php echo esc_html($students); ?></span>+</h2>
+    <div class="col-md-6 col-lg-3 mb-4">
+    <div class="counter-card-item ">
+    <h2 class="about_section2_item-title"><span class="counter"><?php echo esc_html($students); ?></span>+</h2>
         <h3 class="about_section2_item-text">Students</h3>
+        </div>
+       
     </div>
 
-    <div class="col-md-3 counter-card-item">
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="counter-card-item ">
         <h2 class="about_section2_item-title"><span class="counter"><?php echo esc_html($pass_rate); ?></span>%</h2>
         <h3 class="about_section2_item-text">Pass Rate</h3>
+        </div>
+        
     </div>
 </div>
 
@@ -201,8 +163,6 @@ if (function_exists('have_rows') && have_rows('text_&_info_multi_block_sections'
 
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
 

@@ -9,9 +9,6 @@ get_header();
 
 ?>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-
 
 
 
@@ -33,7 +30,7 @@ get_header();
             
             <div class="row">
                 <div class="col-12">
-                <?php echo do_shortcode('[PFG id=207]'); ?>
+                <?php echo do_shortcode('[PFG id=343]'); ?>
                 </div>
             </div>
 

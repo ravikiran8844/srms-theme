@@ -102,6 +102,60 @@ if ($image) {
 
 
 
+
+<section class="home-section7">
+        <div class="container py-5">
+           <div class="row">
+
+
+
+           
+           <div class="col-sm-6 col-lg-3 mb-4">
+                <div class="home-section7_item text-white">
+                    <div class="fs-1 fw-bold"><span class="counter">40</span>+</div>
+                    <div class="fs-5">Years of experience</div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+                <div class="home-section7_item text-white">
+                    <div class="fs-1 fw-bold"><span class="counter">100</span>+</div>
+                    <div class="fs-5">Staff</div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+                <div class="home-section7_item text-white">
+                    <div class="fs-1 fw-bold"><span class="counter">1500</span>+</div>
+                    <div class="fs-5">Students</div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+                <div class="home-section7_item text-white">
+                    <div class="fs-1 fw-bold"><span class="counter">80</span>%</div>
+                    <div class="fs-5">Pass Rate</div>
+                </div>
+
+            </div>
+           </div>
+        </div>
+</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+
+<script>
+$('.counter').counterUp({
+  delay: 10,
+  time: 4000
+});
+$('.counter').addClass('animated fadeInDownBig');
+$('.fs-1').addClass('animated fadeIn');
+</script>
+
 <script>
     jQuery(document).ready(function($) {
         $("#owl-carousel").owlCarousel({

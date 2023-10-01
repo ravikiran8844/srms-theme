@@ -1,6 +1,10 @@
 *{
     font-family: Poppins;
 }
+body{
+    max-width: 1920px;
+    margin: auto;
+}
 
 #wrapper{
     overflow-x: hidden;
@@ -717,30 +721,78 @@ margin: auto;
 
 .counter-card-item {
     text-align: center;
-    padding-bottom: 50px;
-    border-right: 1px solid #CDCDCD;
+    border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+padding: 15px;
+height: 100%;
   }
   
-  .counter-card-item:last-child {
-    border-right: 0px solid black;
-  }
+
   
   .counter {
     animation-duration: 1s;
     animation-delay: 0s;
   }
   
+.simplefilter li{
+    margin-bottom: 20px;
+}
   
-  
-  @media (max-width: 991px) {
-    .counter-card-item {
-      border-right: 0px dashed black;
-      border-bottom: 1px dashed black;
-      width: 50%;
-      margin: auto auto;
-    }
-    
-    .counter-card-item:last-child {
-      border-bottom: 0px dashed black;
-    }
-  }
+.simplefilter li {
+    border-radius: 80px;
+    border: 1px solid #CFCFCF;
+    background: #F8F8F8 !important;
+    color: #434040 !important;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.simplefilter li:hover {
+    background-color: #ef0f42 !important;
+    color: #fff !important;
+
+}
+
+.simplefilter li.active {
+    background-color: #ef0f42 !important;
+    color: #fff !important;
+
+}
+
+
+.footer-wrapper{
+    background: linear-gradient(to right, #2B176C 50%, #EDEDED 50%);
+}
+.footer_items-bg{
+    background: #EDEDED;
+}
+.home-img-banner-section img{
+    min-height: 499px;
+    object-fit: cover;
+    width: 100%;
+}
+.home-section7{
+background-image: url("https://srms.brightbridge.co/wp-content/uploads/2023/09/banner-img-scaled.webp");
+background-size: cover;
+height: 100%;
+}
+.home-section7_item{
+    border-radius: 50%;
+    opacity: 0.8;
+    background: #EF0F42;
+    width: 100%;
+    max-width: 250px;
+   height: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}

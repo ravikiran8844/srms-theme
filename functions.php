@@ -592,7 +592,7 @@ add_action('wp_enqueue_scripts', 'enqueue_owl_carousel');
 
 function enqueue_custom_stylesheet() {
     // Replace 'custom-style' with your unique handle for the stylesheet.
-    wp_enqueue_style('custom-style', get_template_directory_uri() . '/custom-styles.css', array(), '6.0.39', 'all');
+    wp_enqueue_style('custom-style', get_template_directory_uri() . '/custom-styles.css', array(), '6.0.672', 'all');
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_custom_stylesheet');
