@@ -187,7 +187,7 @@ background: #FFF;
 .announcment-bar{
     background: #2B176C;
 }
-.custom-red_button{
+.custom-red_button,.custom-red_button:hover{
     border-radius: 50px !important;
     background: #EF0F42 !important;
     color: #FFF;
@@ -476,7 +476,15 @@ background: #FFF;
     line-height: normal;
     margin: 30px 0;
 }
-
+.accordion-img-text-blocks_item-text summary{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.accordion-img-text-blocks_item-text p{
+    font-size: 16px;
+    font-weight: 400;
+}
 
 
 @media (min-width:768px){
@@ -631,6 +639,15 @@ background: #FFF;
     .row.about_section2_items > div:last-child {
     border-right: none; 
     }
+    .accordion-img-text-blocks_item-text summary{
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .accordion-img-text-blocks_item-text p{
+        font-size: 18px;
+        font-weight: 400;
+    }
 }
 
 
@@ -776,7 +793,6 @@ height: 100%;
     width: 100%;
 }
 .home-section7{
-background-image: url("https://srms.brightbridge.co/wp-content/uploads/2023/09/banner-img-scaled.webp");
 background-size: cover;
 height: 100%;
 }
@@ -795,4 +811,305 @@ height: 100%;
     margin: auto;
     padding: 20px;
     text-align: center;
+}
+.our-facilities_item-img_wrapper{
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+/* Apply a background color to odd items */
+.row .col-12:nth-child(odd) .our-facilities_item .our-facilities_item-img_wrapper {
+    background-color: #2B176C;
+}
+
+/* Apply a background color to even items */
+.row .col-12:nth-child(even) .our-facilities_item .our-facilities_item-img_wrapper{
+    background-color: #EF0F42; /* Replace with your desired background color */
+}
+
+.accordion-img-text-blocks_item-text{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 10px;
+    opacity: 0.8;
+    background: #EF0F42;
+    width: 80%;
+    color: #FFF;
+    font-family: Poppins;
+    padding: 10px;
+}
+.accordion-img-text-blocks_item-text img{
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.accordion-img-text-blocks_item-img{
+    min-height: 500px;
+    object-fit: cover;
+}
+.accordion-img-text-blocks_item-arrow{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    background: #EF0F42;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-img-text-blocks_item-arrow svg{
+width: 20px;
+}
+
+
+.about_sec img{
+    min-height: 350px;
+    object-fit: cover;
+}
+
+
+.home-section5{
+    background-size: cover;
+}
+
+.splide__arrow{
+background-color: transparent !important;
+top: 92% !important;
+}
+.splide__arrow svg {
+    fill: #EF0F42 !important;
+}
+@media (min-width:768px) {
+    .splide__arrow svg {
+        height: 2em !important;
+        width: 2em !important;
+    } 
+}
+.enquire-section{
+    background: #2B176C;
+}
+/* .home-section1-slider img{
+    min-height: 200px;
+    object-fit: cover;
+    object-position: left;
+} */
+
+.enquire-section_modal{
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+header .navbar-nav .nav-link.active{
+    border-bottom: 3px solid #EF0F42;
+    color: #2B176C !important;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: fit-content;
+}
+header .dropdown-item:hover,header .dropdown-item:focus,header .dropdown-item.active,header .dropdown-item:active {
+    
+    background-color: #fff !important;
+    color: #EF0F42 !important;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+header .dropdown-menu {
+    border: none !important;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+.results-page-card_item{
+    border-radius: 5px;
+    border: none;
+    background: #FFF;
+    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.20);
+    border-left: 5px solid;
+}
+.results-page-card-item_count{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border: 1px solid #FFABBE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-page_card .card-body{
+    background: #F8F8F8;
+}
+.page-results_table-card{
+    border-radius: 10px;
+border: 1px solid #C2C2C2;
+background: #FFF !important;
+}
+.page-results_table-card_marks{
+    color: #EF0F42;
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border-radius: 5px;
+background: #FFD9E1;
+padding: 10px 15px;
+}
+.home-blog-post_card{
+border: none;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.15);
+}
+.home-blog-post_card .card-header{
+    color: #B1B1B1;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background-color: #fff;
+border: none;
+}
+.home-blog-post_card .btn{
+    border-radius: 50px !important;
+    border: 1px solid #EF0F42;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: transparent;
+}
+.home-page-event-card_date-wrapper{
+    border-radius: 5px;
+background: #2B176C;
+min-width: 120px;
+min-height: 120px;
+max-width: 120px;
+max-height: 120px;
+flex-shrink: 0;
+
+}
+.upcoming-events-arrow{
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    background: #EF0F42;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer{
+    background: #2B176C;
+} */
+.footer-icons_wrapper{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+.footer-icons_wrapper svg{
+    height: 32px;
+   
+}
+.footer_text{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-hr-line{
+    color: #63509F;
+    opacity: .7;
+}
+.footer-social_icons_wrapper{
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-bg1{
+    background: #2B176C;
+
+}
+.footer-bg2{
+    background: #EDEDED;
+}
+.custom_footer--link-item {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-title-text{
+    color: #2B176C;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.custom-blue-btn,.custom-blue-btn:hover{
+    border-radius: 50px;
+    background: #2B176C !important;
+    color: #FFF !important;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.gallery-image {  
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.paginate-pagination {
+    display: flex;
+justify-content: center;
+}
+.gallery-image-title{
+border-radius: 0px 0px 10px 10px;
+opacity: 0.7;
+background: #2B176C;
+color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
